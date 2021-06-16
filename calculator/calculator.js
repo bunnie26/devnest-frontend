@@ -77,8 +77,6 @@ class calculator{
         else{
             this.previouselement.innerText = ''
         }
-
-
     }
 }
 
