@@ -48,6 +48,14 @@ for(let i = 0;i<arr1.length;i++){
         gg[arr1[i]] += 1
     }
 }
-console.log(gg)
+let key = 0
+let max = 1
+for(keyy in gg){
+    if(gg[keyy]>max){
+        max = gg[keyy]
+        key = keyy
+    }
+}
+console.log({[key] : max})
 
 
