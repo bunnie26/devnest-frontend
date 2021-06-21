@@ -22,7 +22,7 @@ let frames = [
 ];
 
 frames.forEach((i) => {
-  gg[i + 2].classList.toggle("demo");
+  gg[i+2].classList.toggle("demo");
 });
 
 // document.getElementById("55").addEventListener("click", () => {

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(82,63,56);
+    color: white;
+}
+h1{
+    text-align: center;
+    padding-block: 40px;
+    font-size: 5rem;
+}
+p{
+    text-align: center;
+    padding-block: 40px;
+    font-size: 2.5rem;
+}
+#seats{
+    width: 1080px;
+    height: 600px;
+    margin: auto;
+    line-height: 0;
+}
+.seat{
+    width: 180px;
+    height: 100px;
+    background-color: #ff715b;
+    border: 1px solid #605f5e;
+    display: inline-block;
+    transition: .3s ease;
+}
+.seat:hover{
+    opacity: 0.8;
+}
+.woopah{
+    background-color: aquamarine;
+}
