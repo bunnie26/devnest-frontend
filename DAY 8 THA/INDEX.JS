@@ -21,10 +21,9 @@ let frames = [
   283, 284, 286, 287, 288, 289, 303, 305, 308, 325, 328, 345, 348, 365, 368,
 ];
 
-frames.forEach((i)=>{
-    gg[i+2].classList.toggle("demo");
-})
-
+frames.forEach((i) => {
+  gg[i + 2].classList.toggle("demo");
+});
 
 // document.getElementById("55").addEventListener("click", () => {
 //   var list = [];
