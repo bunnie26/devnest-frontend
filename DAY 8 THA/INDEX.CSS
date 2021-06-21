@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.pixel {
+  width: 20px;
+  height: 20px;
+  background-color: #de4738;
+  border: 1px solid #e24e3f;
+  display: inline-block;
+}
+.pixel:hover {
+  opacity: 0.7;
+}
+.pixel.demo {
+  background-color: white;
+  border: 1px solid white;
+}
+#parent {
+  width: 400px;
+  height: 400px;
+  line-height: 0;
+}
+button {
+  width: 40px;
+  height: 50px;
+}
