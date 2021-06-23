@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  /* background-image: url("793938.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
+  background-color: rgb(204, 4, 43);
+}
+.start-button,
+.info-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.start-button button {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  color: rgb(204, 4, 43);
+}
+.info-box {
+  /* display: none; */
+  width: 540px;
+  background-color: white;
+  border-radius: 5px;
+}
+.info-box .info-title {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding: 0 35px;
+  font-weight: 600;
+}
+.info-box .info-list {
+  padding: 15px 35px;
+  /* line-height: 25px; */
+}
+.info-list .info {
+  margin: 5px 0;
+  font-size: 18px;
+}
+.info-box .info-title span {
+  font-weight: 600;
+  color: rgb(204, 4, 43);
+}
+.info-box .buttons {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 35px;
+  border-top: 1px solid lightgrey;
+}
+.info-box .buttons button {
+  margin: 0 5px;
+  height: 40px;
+  width: 100px;
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(204, 4, 43);
+  cursor: pointer;
+  border: 1px solid rgb(204, 4, 43);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.info-box .buttons button.continue {
+  color: white;
+  background-color: rgb(204, 4, 43);
+}
+
+.info-box .buttons button.continue:hover {
+  color: rgb(204, 4, 43);
+  background-color: rgb(239,239,239);
+}
+
+.info-box .buttons button.exit {
+  color: white;
+  background-color: rgb(204, 4, 43);
+}
+
+.info-box .buttons button.exit:hover {
+  color: rgb(204, 4, 43);
+  background-color: rgb(239,239,239);
+}
