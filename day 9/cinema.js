@@ -12,12 +12,12 @@ gg.forEach((i) => {
   i.addEventListener("click", () => {
     i.classList.toggle("woopah");
     if (i.classList.contains("woopah")) {
-      total -=1
+      total -= 1;
       text.innerHTML = `Remaining: ${total}`;
-    }
-    else{
-      total+=1
+    } else {
+      total += 1;
       text.innerHTML = `Remaining: ${total}`;
     }
   });
 });
+// console.log(gg);
