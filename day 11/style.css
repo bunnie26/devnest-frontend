@@ -22,6 +22,14 @@ body {
     0px 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
+.info-box.activeInfo,
+.quiz_box.activeQuiz{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 5;
+}
+
 .start-button button {
   font-size: 25px;
   font-weight: 600;

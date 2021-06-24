@@ -8,7 +8,7 @@ for (var i = 0; i < 400; i++) {
 const gg = document.querySelectorAll(".pixel");
 gg.forEach((i) => {
   i.addEventListener("click", () => {
-    i.classList.toggle("demo");
+    i.style.background = "white";
   });
 });
 let frames = [
