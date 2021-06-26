@@ -27,8 +27,23 @@ continue_btn.onclick = () => {
 
 const next_btn = quiz_box.querySelector(".next_btn")
 const result_box = document.querySelector(".result_box")
-const restart_quiz = result_box.querySelector(" buttons .restart")
-const quit_quiz = result_box.querySelector(" buttons .quit")
+const restart_quiz = result_box.querySelector(".buttons .restart")
+const quit_quiz = result_box.querySelector(".buttons .quit")
+
+restart_quiz.onclick = ()=>{
+  quiz_box.classList.add("activeQuiz");
+  result_box.classList.remove("activeResult");
+  que_count = 0;
+  que_numb = 1;
+  userScore = 0;
+  showQuestions(que_count);
+  queCounter(que_numb);
+  next_btn.style.display = "none";
+  }
+
+quit_quiz.onclick = ()=>{
+  window.location.reload();
+}
 
 // if next button clicks
 next_btn.onclick = () =>{
@@ -47,6 +62,8 @@ next_btn.onclick = () =>{
 
 let que_count = 0;
 let que_numb = 1;
+let userScore = 0;
+
 
 function showQuestions(i) {
   const que_text = document.querySelector(".que_text");
@@ -73,6 +90,8 @@ function optionSelected(answer){
   let correctAns = questions[que_count].answer;
   let allOptions = option_list.children.length;
   if(userAns == correctAns){
+    userScore+=1
+    console.log(userScore)
     answer.classList.add("correct")
     console.log("answer is correct")
     answer.insertAdjacentHTML("beforeend",tickicon)
@@ -90,8 +109,6 @@ function optionSelected(answer){
       }
     }
   }
-  
-
   for (let i = 0; i < allOptions; i++) {
     option_list.children[i].classList.add("disabled") ; 
     // next_btn.style.display = "block";
@@ -102,6 +119,19 @@ function showresultbox(){
   info_box.classList.remove("activeInfo");
   quiz_box.classList.remove("activeQuiz");
   result_box.classList.add("activeResult");
+  const scoretext = result_box.querySelector('.score_text');
+  if(userScore > 3){
+    let scoreTag = '<span>and Congrats! 🎉, You got <p>'+ userScore+'</p> out of <p>'+questions.length+'</p></span>';
+    scoretext.innerHTML = scoreTag 
+  }
+  else if(userScore > 1){
+    let scoreTag = '<span>and nice 👍, You got <p>'+ userScore+'</p> out of <p>'+questions.length+'</p></span>';
+    scoretext.innerHTML = scoreTag 
+  }
+  else{
+    let scoreTag = '<span>and sorry 🤦‍♂️, You got only <p>'+ userScore+'</p> out of <p>'+questions.length+'</p></span>';
+    scoretext.innerHTML = scoreTag 
+  }
 }
 
 function queCounter(i){
