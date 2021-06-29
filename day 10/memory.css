@@ -1,6 +1,37 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: aliceblue;
+}
+body {
+  background-color: rgb(51,67,82);
+}
+.head{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 80px;
 }
 
+#grid{
+    width: 1080px;
+    height: 600px;
+    /* padding-top: 100px; */
+    margin: auto;
+    line-height: 0;
+}
+.container{
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.demo{
+    display: inline-block;
+    width: 180px;
+    height: 100px;
+    background-color: aliceblue;
+    border: 1px solid rgb(51,67,82);
+    border-radius: 5px;
+}
