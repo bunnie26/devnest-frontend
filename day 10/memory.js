@@ -36,4 +36,11 @@ function checkforeach() {
   }
 }
 
+(function shuffle() {
+  cards.forEach((card) => {
+    let pos = Math.floor(Math.random() * 12);
+    card.style.order = pos;
+  });
+})();
+
 cards.forEach((card) => card.addEventListener("click", flipcard));
