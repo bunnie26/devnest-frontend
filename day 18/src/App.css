@@ -1,5 +1,47 @@
-*{
-  margin: 0;
+* {
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  /* background-color: grey; */
+}
+body {
+  background-color: powderblue;
+}
+h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+.cell {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition: ease 0.3s;
+  border: 1px solid black;
+}
+.cell:hover {
+  transform: scale(1.1);
+}
+.board {
+  margin-top: 50px;
+  width: 240px;
+  height: 240px;
+  margin: 30px auto;
+  line-height: 0;
+  box-sizing: content-box;
+  border: 20px solid rgba(0, 0, 0, 0.973);
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.9),
+    0px 6px 20px 0 rgba(0, 0, 0, 0.9);
+}
+.black {
+  background-color: black;
+}
+.white {
+  background-color: white;
+}
+.gg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }

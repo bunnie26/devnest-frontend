@@ -1,10 +1,11 @@
-
-import './App.css';
-
+import "./App.css";
+import Cells from "./Cells";
 function App() {
   return (
-    <div className="App">
-      
+    <div className = "gg">
+      <div className="board">
+        <Cells />
+      </div>
     </div>
   );
 }
