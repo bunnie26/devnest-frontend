@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(247,152,165);
+}
+.Card{
+  background-color: rgb(45,97,110);
+  color: White;
+  border-radius: 2px;
+  padding: 0.5rem;
+  margin: 1rem;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.9),
+    0px 6px 20px 0 rgba(0, 0, 0, 0.9);
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+.Card:hover {
+  transform: scale(1.05);
+}
+img{
+  width: 50px;
+  padding: 5px 10px ;
+}
+.App {
+  margin: auto;
+  padding: 10px;
+  max-width: 500px;
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.Card p {
+  font-size: 1.25rem;
+  right: 50px;
+  bottom: 50px;
+  padding: 10px;
+
+}
+.Card h1{
+  font-size: 2.4rem;
+  padding-block: 5px;
+  padding-bottom: 0;
+  font-family: "Otomanopee One", sans-serif;
+}
+.green {
+  border-radius: 25px;
+  background-color: greenyellow;
+  color: black;
+  font-weight: 600;
+}
+.red {
+  border-radius: 25px;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+}
+.image-container{
+  display: flex;
+  padding-block: 5px;
+}
+.gg {
+  margin-bottom: 50px;
+  font-size: 5rem;
+  font-family: "Otomanopee One", sans-serif;
+  text-align: center;
+}
