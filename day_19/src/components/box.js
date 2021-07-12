@@ -1,6 +1,6 @@
 import { useState } from "react";
 const Box = () => {
-  let [num, Counter] = useState(1);
+  let [num, Counter] = useState(0);
   return (
     <div>
       <button
