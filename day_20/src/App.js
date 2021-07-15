@@ -38,7 +38,6 @@ function App() {
     const newArray = value.filter((omk) => omk.id !== id);
     setValue(newArray);
   };
-
   return (
     <div>
       <h1 className="gg">Calory Tracker</h1>
