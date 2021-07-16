@@ -5,4 +5,14 @@
 }
 .App{
   text-align: center;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+.gg h1{
+  display: inline-block;
+  margin: 0 10px;
+}
+.gg{
+  margin:10px 0;
 }
