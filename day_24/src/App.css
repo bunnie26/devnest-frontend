@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  width: 100vw;
+  /* overflow-x: hidden; */
+}
 Nav {
   display: flex;
   justify-content: space-around;
@@ -17,7 +21,7 @@ Nav ul {
   flex-direction: row;
 }
 Nav li {
-  margin: 5px 300px;
+  margin: 5px 150px;
   font-size: 2rem;
   list-style-type: none;
   cursor: pointer;
@@ -39,6 +43,11 @@ Nav li {
   align-items: center;
   flex-direction: column;
 }
-Link {
+nav Link {
   text-decoration: none;
+}
+button {
+  margin: 30px;
+  padding: 10px 20px;
+  font-size: 3rem;
 }
