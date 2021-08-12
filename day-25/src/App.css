@@ -1,38 +1,47 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url("https://images6.alphacoders.com/658/658462.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(1, 1, 1);
+  height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Navbar {
+  position: fixed;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Home {
+  color: aliceblue;
+  background-color: rgb(1, 1, 1);
+  overflow-y: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(1, 1, 1);
+  background-image: url("https://theplanetd.com/images/new-orleans-food.jpg");
+  height: 100vh;
+}
+.Home h1 {
+  margin: 70px 0;
+}
+.Family {
+  background-image: url("https://i.pinimg.com/originals/fe/e1/84/fee18481df61ce4220956dc8f44d09e8.jpg");
+  height: 100vh;
+}
+.Family h1 {
+  /* margin: 60px 0; */
+  /* margin-left: 40%; */
+  /* position: absolute; */
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+.Container {
+  margin: 70px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  margin-inline: 10px;
 }
