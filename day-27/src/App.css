@@ -1,4 +1,39 @@
 .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-
+body {
+  background-color: lightcoral;
+}
+.main input {
+  margin-inline: 10px;
+  padding: 5px 10px;
+}
+.main button {
+  margin-inline: 10px;
+  padding: 5px 10px;
+}
+.Todo {
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+  height: 80px;
+  width: 500px;
+  margin: 10px;
+  border-radius: 25px;
+  background-color: lightblue;
+}
+.Todo h2 {
+  padding: 0 20px;
+}
+.Todo button {
+  height: 30px;
+  border-radius: 25px;
+  margin: 18px 10px;
+  background-color: crimson;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0 10px;
+}
