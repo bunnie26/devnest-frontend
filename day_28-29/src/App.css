@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,9 @@ body {
 }
 .App {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .form {
   display: flex;
@@ -30,4 +34,44 @@ body {
   padding: 0 10px;
   margin-left: 5px;
   /* background-color: rgb(255,191,109) */
+}
+.card {
+  background: transparent;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width:400px; */
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+  /* height: 300px; */
+  border: none;
+}
+.internal-card {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(158, 234, 236);
+  background: rgba(0, 0, 0, 0.37);
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card img {
+  margin-top: 10px;
+  width: 30%;
+  border-radius: 50%;
+}
+.card .place {
+  font-weight: 600;
+  font-size: 2.3rem;
+  margin: 5px 0;
+  margin-bottom: 10px;
+}
+.card .temp {
+  font-size: 4rem;
+  margin: 5px 0;
 }
