@@ -1,4 +1,33 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
+body {
+  background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/68/39/A3VuDC.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.App {
+  display: flex;
+}
+.form {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px 0;
+  align-items: center;
+}
+.form input {
+  padding: 5px 10px;
+  background-color: rgb(236, 243, 255);
+  margin: 0 10px;
+  border-radius: 5px;
+  border: none;
+}
+.form button {
+  height: 35px;
+  padding: 0 10px;
+  margin-left: 5px;
+  /* background-color: rgb(255,191,109) */
+}
