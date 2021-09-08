@@ -8,7 +8,7 @@ function App() {
   const [placeData, setPlaceData] = useState({});
   const UpdatePlaceData = () => {
     fetch(
-      `https://api.weatherapi.com/v1/current.json?key=40c4ae47ddf64f718a5131051210108&q=${place}`
+      `https://api.weatherapi.com/v1/forecast.json?key=40c4ae47ddf64f718a5131051210108&q=${place}&days=3`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -41,10 +41,19 @@ function App() {
                   <img src={placeData.current.condition.icon}></img>
                   <div className="temp">{placeData.current.temp_c}°c</div>
                   <div className="place">{placeData.location.name}</div>
+                  <hr className="line" />
+                  <div className="weather">
+                    {placeData.current.condition.text}
+                  </div>
+                  <div className="days">
+                    <div>Day 1</div>
+                    <div>Day 2</div>
+                    <div>Day 3</div>
+                  </div>
                 </div>
               ) : (
                 <div className="internal-card">
-                  <h1>Place not found</h1>
+                  <h1>Enter a Valid Place</h1>
                 </div>
               )}
             </div>
