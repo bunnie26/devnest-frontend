@@ -34,7 +34,7 @@ function App() {
               <SearchIcon size={18} />
             </button>
           </div>
-          <div className="offset-md-4 col-12 col-md-4 weather">
+          <div className="main">
             <div className="card">
               {placeData.location ? (
                 <div className="internal-card">
@@ -46,9 +46,42 @@ function App() {
                     {placeData.current.condition.text}
                   </div>
                   <div className="days">
-                    <div>Day 1</div>
-                    <div>Day 2</div>
-                    <div>Day 3</div>
+                    <div className="day">
+                      <img
+                        src={
+                          placeData.forecast.forecastday[0].day.condition.icon
+                        }
+                      />
+                      <div className="temps">
+                        {placeData.forecast.forecastday[0].day.mintemp_c}°c /{" "}
+                        {placeData.forecast.forecastday[0].day.maxtemp_c}°c
+                      </div>
+                      <h3>{placeData.forecast.forecastday[0].date}</h3>
+                    </div>
+                    <div className="day">
+                      <img
+                        src={
+                          placeData.forecast.forecastday[1].day.condition.icon
+                        }
+                      />
+                      <div className="temps">
+                        {placeData.forecast.forecastday[1].day.mintemp_c}°c /{" "}
+                        {placeData.forecast.forecastday[1].day.maxtemp_c}°c
+                      </div>
+                      <h3>{placeData.forecast.forecastday[1].date}</h3>
+                    </div>
+                    <div className="day">
+                      <img
+                        src={
+                          placeData.forecast.forecastday[2].day.condition.icon
+                        }
+                      />
+                      <div className="temps">
+                        {placeData.forecast.forecastday[2].day.mintemp_c}°c /{" "}
+                        {placeData.forecast.forecastday[2].day.maxtemp_c}°c
+                      </div>
+                      <h3>{placeData.forecast.forecastday[2].date}</h3>
+                    </div>
                   </div>
                 </div>
               ) : (
